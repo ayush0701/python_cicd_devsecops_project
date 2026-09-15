@@ -1,0 +1,6 @@
+services:
+    python_ecom:
+      build: .
+      ports:
+        - "8000:5000"
+      
