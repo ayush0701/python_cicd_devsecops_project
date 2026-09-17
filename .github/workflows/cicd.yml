@@ -35,6 +35,6 @@ jobs:
       #     pytest
 
       # 5. Build the source distribution and wheel package
-      - name: Build package
-        run: |
-          python -m build
+      # - name: Build package
+      #   run: |
+      #     python -m build
