@@ -1,0 +1,24 @@
+#Goal is to check if python code is syntactically correct
+
+name: code lint
+
+on: 
+    workflow_dispatch
+
+jobs:
+    code-linter:
+        runs-on: ubuntu-latest
+        steps:
+            - name: code checkout
+              uses: actions/checkout@v7
+
+            - name: setup python
+              uses: actions/setup-python@v7
+              with:
+                python-version: '3.13'
+
+            - name: Install dependencies
+              uses: pip install -r requirements.txt
+
+            - name: code-lint
+              uses: ruff check .
