@@ -3,7 +3,7 @@
 name: code lint
 
 on: 
-    workflow_dispatch
+    push
 
 jobs:
     code-linter:
