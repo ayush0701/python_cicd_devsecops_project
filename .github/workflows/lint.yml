@@ -18,7 +18,7 @@ jobs:
                 python-version: '3.13'
 
             - name: Install dependencies
-              uses: pip install -r requirements.txt
+              run: pip install -r requirements.txt
 
             - name: code-lint
-              uses: ruff check .
+              run: ruff check .
