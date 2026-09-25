@@ -22,3 +22,6 @@ jobs:
 
             - name: code-lint
               run: ruff check .
+
+            - name: Code Test
+              run: pytest
